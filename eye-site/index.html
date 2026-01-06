@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>EyE — Cyber Security</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="EyE — elite cyber security solutions">
+<meta name="keywords" content="cyber security, pentest, EyE">
+<meta name="author" content="EyE">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="warning">SECURE CONNECTION ESTABLISHED</div>
+<canvas id="matrix"></canvas>
+<div class="scanline"></div>
+
+<header>
+  <div class="logo glitch" data-text="EyE">EyE</div>
+  <nav>
+    <a href="#services" data-i18n="services">Услуги</a>
+    <a href="#contact" data-i18n="contact">Контакты</a>
+  </nav>
+  <select id="langSwitcher">
+    <option value="ru">RU</option>
+    <option value="en">EN</option>
+    <option value="uz">UZ</option>
+  </select>
+</header>
+
+<section class="hero">
+  <h1 class="glitch" id="typing" data-text="EyE :: Cyber Security & Digital Defense"></h1>
+  <p data-i18n="subtitle">Элитные решения в области кибербезопасности</p>
+  <button class="btn" data-i18n="order">Заказать услугу</button>
+</section>
+
+<section class="terminal fade">
+  <div class="terminal-header">root@eye:~</div>
+  <pre id="terminalText"></pre>
+</section>
+
+<section class="terminal fade">
+  <div class="terminal-header">eye@console:~</div>
+  <pre id="hackConsole"></pre>
+</section>
+
+<section id="services" class="section fade">
+<h2 data-i18n="services">Услуги</h2>
+<div class="cards">
+  <div class="card">🔐 Pentest</div>
+  <div class="card">🛡 Web Security</div>
+  <div class="card">⚙ Server Protection</div>
+  <div class="card">🕵 OSINT Analysis</div>
+</div>
+</section>
+
+<section id="contact" class="section fade">
+<h2 data-i18n="contact">Контакты</h2>
+<form id="contactForm">
+<input type="text" name="name" placeholder="Name" required>
+<input type="email" name="email" placeholder="Email" required>
+<textarea name="message" placeholder="Message" required></textarea>
+<input type="text" name="company" style="display:none">
+<button class="btn">Send</button>
+</form>
+</section>
+
+<script src="js/main.js"></script>
+</body>
+</html>
